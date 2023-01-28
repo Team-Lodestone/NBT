@@ -2,6 +2,8 @@
 #include <QTreeWidget>
 #include <nbt.h>
 
+// My python nbt gui reader converted to good ol c++ with QT! Please Work!!
+
 void print_tags_gui(QTreeWidgetItem* parent, NBT::Tag* tag, QTreeWidget* treeview) {
     //A function to recursively add all the tags in an NBT file to a treeview.
     if (tag->getType() == NBT::Tag::Type::TAG_COMPOUND) {
